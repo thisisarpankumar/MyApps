@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1619535564 source:f:\my_documents\codeblocks_data\myfirstwindowsconsole\main.cpp
+	<tchar.h>
+	<windows.h>
+
