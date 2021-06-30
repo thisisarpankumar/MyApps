@@ -1,0 +1,97 @@
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git stash
+No local changes to save
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ git push origin main
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/test (main)
+$ cd ..
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ ls
+test/
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ git clone https://github.com/thisisarpankumar/MyApps.git
+Cloning into 'MyApps'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials
+$ cd MyApps/
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git add .
+warning: LF will be replaced by CRLF in MyFirstWindowsConsole/MyFirstWindowsConsole.cbp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in MyFirstWindowsConsole/MyFirstWindowsConsole.layout.
+The file will have its original line endings in your working directory
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   MyFirstWindowsConsole/MyFirstWindowsConsole.cbp
+        new file:   MyFirstWindowsConsole/MyFirstWindowsConsole.depend
+        new file:   MyFirstWindowsConsole/MyFirstWindowsConsole.layout
+        new file:   MyFirstWindowsConsole/main.cpp
+
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git commit -m "My Windows_API"
+[main 0daa8e4] My Windows_API
+ 4 files changed, 153 insertions(+)
+ create mode 100644 MyFirstWindowsConsole/MyFirstWindowsConsole.cbp
+ create mode 100644 MyFirstWindowsConsole/MyFirstWindowsConsole.depend
+ create mode 100644 MyFirstWindowsConsole/MyFirstWindowsConsole.layout
+ create mode 100644 MyFirstWindowsConsole/main.cpp
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git log
+commit 0daa8e440ed784ecfb91e18e938bd48de6773d2f (HEAD -> main)
+Author: thisisarpankumar <arpankumar007@outlook.com>
+Date:   Wed Jun 30 18:16:20 2021 +0530
+
+    My Windows_API
+
+commit c7b5bc9967cf8ba04ce8d4436361ada76142eb5c (origin/main, origin/HEAD)
+Author: Arpan Kumar <arpankumar007@outlook.com>
+Date:   Wed Jun 30 18:06:57 2021 +0530
+
+    Initial commit
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$ git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.68 KiB | 2.68 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thisisarpankumar/MyApps.git
+   c7b5bc9..0daa8e4  main -> main
+
+arpan@ARPAN-PC MINGW64 /f/My_Source_codes/Git/GitTutorials/MyApps (main)
+$
